@@ -1,0 +1,26 @@
+eos utility software to be updated could not be found
+
+C:\Program Files (x86)\Canon\EOS Utility\EOS Utility.exe
+Right click and choose Properties
+Click on the tab Compatibility
+In Compatibility mode, check Run this program in compatibility mode for Windows 8
+
+About EOS Utility
+EOS Utility is an application that brings together functions to communicate with the camera. These functions include downloading and displaying images, remote shooting, and camera control for each setting. For download instructions follow the steps below. Have your camera's Serial Number ready before you begin.
+Download Instructions
+Select your model on the left side of this page. Once you arrive at the product support page follow these instructions.
+Select the “Drivers & Downloads” tab
+Select the “Software” tab
+Find the “EOS Utility” and click the “SELECT” button
+File description will open and click “I have read and Agree to terms…” message once you agree the download button will turn red and you will be able to click and download the utility
+
+Answer from this guy: 
+https://answers.microsoft.com/en-us/profile/b4610753-0877-4ac5-8173-7bfc73215030?sort=LastReplyDate&dir=Desc&tab=Threads&filter=undefined&forum=allcategories&meta=&status=&mod=&modAge=&advFil=&postedAfter=&postedBefore=&threadType=All&page=1
+
+I got the same problem when the "Windows Feature" update was installed a few days ago. I got it to work by setting the Compatibility to "Windows 8". A number of users have reported that there are two EOS Utility programs. The first is in C:\Program Files(x86)\EOS Utility. The second is in C:\Program Files(x86)\EOS Utility\EOS Utility.
+
+The first doesn't run at all after the update. Doesn't show up in Task Manager at all. The second run can be made to run (change the pointer in Start Menu or your shortcut), but comes up with "Download Photos" greyed out.
+
+You have to set the Compatibility Setting on the first program and let it call the second one for you. Then the program will run as normal.
+
+Only took me about 8 hours of reading various forums to figure this out.
