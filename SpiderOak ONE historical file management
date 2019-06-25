@@ -1,0 +1,51 @@
+BACKGROUND
+Each time you modify a file in your backup set, SpiderOak saves the changed file as a new version rather than overwriting the existing file. The previous version of your file then becomes a historical version.
+Historical versions only include the information that differs from the previous version; the rest of the file information deduplicates. Most historical versions take up little additional space in your account. For more information see our Deduplication FAQ.
+Documents that have historical versions saved will be followed by a number in parentheses which indicates how many historical versions SpiderOak has saved For example: "file.doc (3)".
+
+
+for easier navigation, Show Full Paths toggle button is enabled, near the top of the Manage tab. you will see while browsing the deleted items bins of your devices that there's probably only one or two top level folders, with everything inside it. If you wish to empty the deleted items bin and delete everything, you can select that top level folder and remove it.
+
+It's not possible to limit how many historical versions of a file SpiderOak One or Groups keeps or to stop saving them entirely. This is intentional. Historical versions are a critical part of the backup process: If your file is accidentally damaged, you still have the older correct version safely backed up. That being said, you can delete them whenever you feel that you have collected too many.
+
+Files which have historical versions will be followed by a number in parentheses which indicates how many historical versions have been saved. They will look something like:   file.docx (3)
+To delete ** A window will slide out from the right displaying all of the file's historical versions, including the date the version was saved and its size.** Select any version and then click the Remove button to remove the version from your account. ** To select multiple versions, hold down the Control key and click which you would like to remove. **
+
+
+On Windows
+Okay, it still seems complicated to manage, compared to Dropbox, but I understand that it's all about 'Deduplication.'
+SpiderOak saves the changed file as a new version rather than overwriting the existing file. 
+
+"Although it is an advanced technique, you can also purge all your historical versions at once by using the --purge-historical-versions option from the command line."
+
+Use
+To run this command, first completely close SpiderOak One, and be sure that all SpiderOak One processes have closed correctly. Then:
+On Windows
+Open a command prompt window. Enter the following text into the window at the prompt, then press enter:
+cmd /c "C:\Program Files\SpiderOakONE\SpiderOakONE.exe" --purge-historical-versions --verbose 
+
+C:\Program Files\SpiderOakONE
+         (  not C:\Users\EO\Documents\SpiderOak Hive         )
+
+
+
+...
+
+
+Examples
+--purge-historical-versions: Keep one hourly version for 24 hours, one daily version for 30 days, then one weekly version thereafter.
+
+--purge-historical-versions h24,d30,w: Keep one hourly version for 24 hours, one daily version for 30 days, then one weekly version thereafter. This is the same as the default schedule.
+
+--purge-historical-versions d60,m6,y: Keep one daily version for 60 days, one monthly version for 6 months, then one yearly version thereafter.
+
+--purge-historical-versions w: Keep one weekly version since the beginning of time.
+
+--purge-historical-versions all: Purge all historical versions.
+
+To purge only historical versions which are newer than a specific date, you can simply leave off any older qualifier. For example:
+
+--purge-historical-versions d7: Keep one version a day for seven days, but do not purge versions older than one week.
+
+--purge-historical-versions d7,m6: Keep one version a day for seven days and one version a month for six months, but do not purge versions older than six months.
+
