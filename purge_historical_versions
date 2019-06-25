@@ -1,0 +1,42 @@
+Microsoft Windows [Version 10.0.17134.799]
+(c) 2018 Microsoft Corporation. All rights reserved.
+
+C:\WINDOWS\system32>C:\Program Files\SpiderOakONE\SpiderOakONE.exe
+'C:\Program' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\WINDOWS\system32>cd\
+
+C:\>C:\Program Files\SpiderOakONE
+'C:\Program' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\>ch C:\Program Files\SpiderOakONE
+'ch' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\>cd Program Files
+
+C:\Program Files>cd SpiderOakONE
+
+C:\Program Files\SpiderOakONE>--purge-historical-versions --verbose
+'--purge-historical-versions' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Program Files\SpiderOakONE>cmd /c "C:\Program Files\SpiderOakONE\SpiderOakONE.exe" --purge-historical-versions --verbose
+SSL: using TLSv1_2_METHOD
+Status:
+Status: Waiting for initial updates from server
+Status:
+Status: Activity: Application:  system action
+Status:
+Status: Activity: Application:  removing old versions
+Status: Activity: Application:  removing old versions: Purging file SpiderOak ONE historical file management.txt
+Status: Activity: Application:  removing old versions: Purging file Abbott Benefits Acct Statement - SRP  Target Retirement 2050 , 77k 1.2 rate return.pdf
+Status: Activity: Application:  removing old versions: Purging file Abbott Benefits Acct Statement - SRP, 77k 1.2 rate return.pdf
+Status: Activity: Application:  removing old versions: Purging file electrumwallet3-29-14
+Status: Activity: Application:  removing old versions: Purging file pfister11microexpressions.pdf
+Status: Activity: Application:  removing old versions
+Status:
+Status: Activity: Revising backup queue...
+Status:
